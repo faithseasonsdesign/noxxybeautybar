@@ -1,0 +1,179 @@
+*{margin:0;padding:0;text-decoration: none;list-style-type: none !important;font-family: arial;}
+a{color:white;text-decoration: none;}
+
+/*coding for navigation bar start here*/
+.navigation-wrapper{background-color: rgb(199, 23, 81);}
+.nav-list-items-wrapper{background-color: prgb(199, 23, 81) !important;}
+.navigation-bar{
+    max-width:1200px;
+    padding:0px 20px 0px 20px;
+    margin:0 auto;
+    height:150px;
+    display: flex;
+    align-items: center;
+}
+.logo-wrapper{display: flex;flex:1;}
+.logo-lg{height:120px}
+.nav-list-items,.list-items{
+    float:left;
+    margin-right: 20px;
+}
+/*coding for navigation bar ended here*/
+
+/*hero section coding start here*/
+.hero-bg-image{
+    margin-top:-10px;
+    height:100vh;
+    background: url("../images/2.jpg");
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+}
+.hero-mask{
+    background-color: rgb(14 6 6 / 85%);
+    height:100vh;
+    
+}
+.content{
+    max-width: 1200px;
+    margin:0px auto;
+    padding:0px 20px 0px 20px;
+}
+.hero-caption{font-size:46pt}
+.hero-subcaption{font-size: 24pt;}
+
+
+
+.custom-shape-divider-bottom-1646042594 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1646042594 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 135px;
+}
+
+.custom-shape-divider-bottom-1646042594 .shape-fill {
+    fill: rgb(199, 23, 81);;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1646042594 svg {
+        width: calc(100% + 1.3px);
+        height: 86px;
+    }
+}
+/*hero section coding ended here*/
+
+/*coding for clients helped*/
+
+/*coding for clients helped*/
+.clients-section{
+    background-color:rgb(199, 23, 81);
+    padding:50px 0px 50px 0px;
+ }
+ .client-caption{font-size:18pt}
+/*about us coding start here*/
+.about-section{
+    padding:50px 0px 50px 0px;
+    background-color:rgb(240, 240, 240);
+}
+.about-content{
+    flex-direction: column;
+}
+.about-caption{font-size:36pt;}
+.about-subcaption{font-size: 18pt;}
+/*about us coding ended here*/
+
+/*working hours coding start here*/
+.working-bg-image{
+    background:url("../images/office.jpg");
+    height:65vh;
+    background-size:100% 100%;
+}
+.working-mask{
+    background-color:rgb(14 6 6 / 90%) ;
+    height:65vh;
+    flex-direction: column;
+}
+.content{
+    max-width: 1200px;
+    margin:0px auto;
+    padding:0px 20px 0px 20px;
+}
+/*working hours coding ended here*/
+
+/*contact us coding start here*/
+.contact-section-wrapper{padding:50px 0px 50px 0px}
+input{height:40px}
+/*contact us coding ended here*/
+
+/*footer coding start here*/
+.footer-section{
+    background-color: darkblue;
+    color:white;
+    padding:80px 0px 80px 0px;
+    text-align:center;
+}
+/*footer coding ended here*/
+
+
+/*media queries start*/
+@media screen and (min-width:768px){
+    .button-wrapper{display: none;}
+    .day-caption{font-size: 16pt;}
+    .time-caption{font-size:12pt}
+}
+@media screen and (max-width:767px){
+    .nav-list-items-wrapper{display: none;}
+    .logo-lg{height:100px}
+    .nav-list-items,.list-items{margin-right: 0;}
+    .nav-list-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        height:100%;
+        text-align:center;
+        background-color: rgb(206, 20, 82);
+        top:140px;
+        right:0;
+        left:0;
+        border-top: solid 1px white;
+        row-gap:20px;
+    }
+    .hero-bg-image{background-size:100% 100%}
+    .hero-bg-image,.hero-mask{height:60vh;text-align:center}
+    .hero-caption{font-size:30pt}
+    .hero-subcaption{font-size: 18pt;}
+    .about-caption{font-size:30pt}
+    .about-subcaption{font-size: 13pt;}
+    .row{row-gap: 30px;}
+}
+@media screen and (min-width:769px)  and (max-width:992px){
+    .about-caption{font-size: 26pt;}
+    .about-subcaption{font-size: 12pt;}
+}
+@media screen and (max-width:210px){
+    .hero-caption{font-size: 20pt;}
+    .hero-subcaption{font-size: 12pt;}
+}
+@media screen and (max-width:165px){
+    .logo-lg{height:80px}
+    .navigation-bar{
+        height:200px;
+        display: flex;
+        padding-bottom:50px;padding-top:20px;
+        flex-direction: column;
+        row-gap:8px;
+    }
+    .nav-list-items{top:200px}
+}
+/*media queries ended*/
